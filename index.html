@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jose Espinal - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jose Espinal
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          j.espinalcorrea1@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +41795992042
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile.jpeg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Jose Espinal! <img src="html_finalprojimages/wave-hi.gif" width="60px"/>
+          </h1>
+          <p>
+            I am a biomedical Engineer and fron end developer with 10 years of experience in biomedical areas and 2 months in creating websites.
+            I have worked in Hospitals, laboratories and factories. 
+            Now I am an avid user of HTML5, CSS and javascript.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>2 months experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>2 months experience</p>
+          </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/logo_itm.png"/>
+          <h6>Biomedical Engineer</h6>
+          <p>10 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>AI Asistent</h3>
+            <ul>
+              <li>Developed a secure website integrated with an AI asistent for website developer client using HTML, CSS, JavaScript, Python and IBM Watson Assistant and tolls</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>body mass index (BMI) Calculator</h3>
+            <ul>
+              <li>Developed and deployed a app in MATLAB for the interation with the user calculating the body mass index (BMI) from the user</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Hamzo Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the Enigeering
+                   field industry and integrated it with a shopping cart, using stripe for 
+                   payment gateway, HTML, CSS, JavaScript and Wordpress for reduction of website cost</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jose has been an excellent student since I met him, learning quickly and carrying out all
+           his educational tasks in our ITM university, his score is always above 4 which is not easy 
+           to achieve and it is thanks to his continuous effort.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          During his stay in our company Sodexo he achieved things that his colleagues saw impossible 
+          at first instance but from the beginning he gave me the confidence that he could do it, advancing 
+          from biomedical field technologist to be national coordinator of biomedical and industrial equipment 
+          of our company Suramericana through Sodexo S.A. I believe that to achieve this in less than 3 years 
+          speaks for itself, he is an excellent employee.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have known Jose for more than 10 years, I have worked with him and I am his friend, I am inspired 
+          by every step he takes and how he performs with resilience at the educational and work level giving 
+          changes to his environment in a positive way. He is also very responsible, aligns to processes quickly 
+          and has a service attitude that is very appealing to upper management and clients. On the other hand, 
+          he is an unconditional friend, sociable and humorous when the moment requires it, he will surely go far 
+          no matter where he is. ! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+      
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for this recommendation :)</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
