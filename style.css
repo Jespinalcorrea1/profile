@@ -330,3 +330,7 @@ button:hover {
   cursor: pointer;
   
 }
+/*modify copyright font size ©️*/
+footer p {
+    font-size: 12px; /* Tamaño en píxeles */
+}
